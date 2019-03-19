@@ -25,6 +25,7 @@
 - [Structs](#structs)
     - [Methods](#methods)
     - [Arithmetic Operators](#arithmetic-operators)
+- [Arrays](#arrays)
 
 ## Variables
 
@@ -80,7 +81,7 @@ bool enabled = false;
 
 ### Dynamic Types
 
-> C++ 11
+> `decltype` requires C++ 11
 
 ```cpp
 float k = 3.14f;
@@ -348,5 +349,17 @@ Vector2 operator+(Vector2 a, Vector2 b) {
 int main() {
     Vector2 position{1,2};
     Vector2 newPosition = position + Vector2{1,1};
+}
+```
+
+## Arrays
+
+> `std::size` requires C++ 17
+
+```cpp
+int main()
+{
+    int array[5]{1, 2, 3, 4, 5};
+    std::cout <<  std::size(array) << std::endl;
 }
 ```
