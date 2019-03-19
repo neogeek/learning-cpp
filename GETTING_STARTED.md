@@ -37,26 +37,16 @@ int main()
 }
 ```
 
-## Compile and Run
+## Compile and Run with C++ 17 (2018)
 
-```shell
-$ g++ HelloWorld/main.cpp -o out && ./out
-```
-
-#### C++ 11
-
-```bash
-$ g++ -std=c++11 HelloWorld/main.cpp -o out && ./out
-```
-
-#### C++ 14
-
-```bash
-$ g++ -std=c++14 HelloWorld/main.cpp -o out && ./out
-```
-
-#### C++ 17
+### Bash
 
 ```bash
 $ g++ -std=c++17 HelloWorld/main.cpp -o out && ./out
 ```
+
+### Xcode
+
+**Build Settings** > **Apple LLVM 9.0 - Language - C++** > **C++ Language Dialect** > Select **C++17 [-std=c++17]**
+
+![](screenshots/xcode-cpp-version.png)
