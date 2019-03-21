@@ -297,6 +297,27 @@ int main() {
 }
 ```
 
+### Templates
+
+```cpp
+template<typename T, size_t N>
+void printArray(T (&array)[N]) {
+
+    int length = std::size(array);
+
+    std::string output = "";
+
+    for (int i = 0; i < length; i += 1) {
+
+        output += std::to_string(array[i]) + " ";
+
+    }
+
+    std::cout << output << std::endl;
+
+}
+```
+
 ## Structs
 
 ```cpp
