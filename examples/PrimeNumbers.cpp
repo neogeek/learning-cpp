@@ -23,7 +23,9 @@ int main() {
     for (int i = 0; i < std::size(primeNumbers); i += 1) {
 
         do {
+
             lastNumber += 1;
+
         } while (!isPrime(lastNumber));
 
         primeNumbers[i] = lastNumber;
