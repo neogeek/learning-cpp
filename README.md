@@ -318,6 +318,33 @@ void printArray(T (&array)[N]) {
 }
 ```
 
+```cpp
+template<typename T, size_t N>
+void sortArray(T (&array)[N]) {
+
+    int length = std::size(array);
+
+    for (int i = 0; i < length; i += 1) {
+
+        int lowestValueIndex = i;
+
+        for (int j = i; j < length; j += 1) {
+
+            if (array[j] < array[lowestValueIndex]) {
+
+                lowestValueIndex = j;
+
+            }
+
+        }
+
+        std::swap(array[i], array[lowestValueIndex]);
+
+    }
+
+}
+```
+
 ## Structs
 
 ```cpp
