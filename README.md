@@ -22,6 +22,7 @@
     - [While](#while)
     - [Switch](#switch)
 - [Functions](#functions)
+    - [Templates](#templates)
 - [Structs](#structs)
     - [Methods](#methods)
     - [Arithmetic Operators](#arithmetic-operators)
