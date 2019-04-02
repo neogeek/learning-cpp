@@ -27,6 +27,9 @@
     - [Methods](#methods)
     - [Arithmetic Operators](#arithmetic-operators)
 - [Arrays](#arrays)
+- [IO](#io)
+    - [Output](#output)
+    - [Input](#input)
 
 ## Variables
 
@@ -450,5 +453,32 @@ int main()
 {
     int array[5]{1, 2, 3, 4, 5};
     std::cout << std::size(array) << std::endl;
+}
+```
+
+## IO
+
+### Output
+
+```cpp
+#include <iostream>
+
+int main()
+{
+    std::cout << "Hello, world!\n";
+}
+```
+
+### Input
+
+```cpp
+#include <iostream>
+
+int main()
+{
+    int test;
+    std::cout << "Enter integer: ";
+    std::cin >> test;
+    std::cout << "You entered " << test << "\n";
 }
 ```
