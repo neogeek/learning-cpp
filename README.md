@@ -71,6 +71,8 @@ double l = 3.14f; // 64 bit
 ### Strings
 
 ```cpp
+#include <iostream>
+
 std::string message = "Hello, world";
 ```
 
@@ -100,6 +102,8 @@ auto message = "Hello, world";
 ### Typedefs
 
 ```cpp
+#include <iostream>
+
 typedef float distance;
 
 int main() {
@@ -121,6 +125,8 @@ float j = static_cast<float>(3.14);
 ```
 
 ```cpp
+#include <iostream>
+
 int main() {
     std::cout << "Pie is " + std::to_string(3.14) << std::endl;
 }
@@ -151,6 +157,8 @@ constexpr float p2 = 3.14f * 2;
 Basic enum values are accessible without prefix.
 
 ```cpp
+#include <iostream>
+
 enum COLOR {
     RED,
     GREEN,
@@ -165,6 +173,8 @@ int main() {
 Class-based enum values require the prefix. These are preferred.
 
 ```cpp
+#include <iostream>
+
 enum class COLOR {
     RED,
     GREEN,
@@ -200,6 +210,8 @@ int main() {
 ### If
 
 ```cpp
+#include <iostream>
+
 int main() {
 
     bool activeStatus = false;
@@ -220,6 +232,8 @@ int main() {
 ### For
 
 ```cpp
+#include <iostream>
+
 int main() {
 
     for (int i = 0; i < 10; i += 1) {
@@ -234,6 +248,8 @@ int main() {
 ### While
 
 ```cpp
+#include <iostream>
+
 int main() {
 
     int i = 0;
@@ -252,6 +268,8 @@ int main() {
 ### Switch
 
 ```cpp
+#include <iostream>
+
 int main() {
 
     int status = 0;
@@ -279,6 +297,8 @@ int main() {
 ## Functions
 
 ```cpp
+#include <iostream>
+
 void displayMessage(std::string message) {
     std::cout << message << std::endl;
 };
@@ -289,6 +309,8 @@ int main() {
 ```
 
 ```cpp
+#include <iostream>
+
 int addNumbers(int a, int b) {
     return a + b;
 }
@@ -301,6 +323,8 @@ int main() {
 ### Templates
 
 ```cpp
+#include <iostream>
+
 template<typename T, size_t N>
 void printArray(T (&array)[N]) {
 
@@ -320,6 +344,8 @@ void printArray(T (&array)[N]) {
 ```
 
 ```cpp
+#include <iostream>
+
 template<typename T, size_t N>
 void sortArray(T (&array)[N]) {
 
@@ -418,6 +444,8 @@ int main()
 ```
 
 ```cpp
+#include <iostream>
+
 int main()
 {
     int array[5]{1, 2, 3, 4, 5};
